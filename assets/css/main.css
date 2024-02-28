@@ -1,0 +1,80 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    color: #FCFCFC;
+    font-size: 20px;
+    padding: 13px 28px;
+    border-radius: 26px;
+    background: #FDA214;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.gameBox {
+    width: 305px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    li {
+        display: inline-block;
+        color: #304859;
+        color: transparent;
+        font-size: 20px;
+        padding: 14px 24px;
+        border-radius: 50%;
+        background: #304859;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .active {
+        background-color: #BCCED9;
+        color: #FCFCFC;
+    }
+
+    .correct {
+        background-color: #FDA214;
+        color: #FCFCFC;
+    }
+}
